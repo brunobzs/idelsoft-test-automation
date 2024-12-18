@@ -53,6 +53,7 @@ npx cypress run
 ├── cypress
 │ ├── e2e                  # Test files
 │ ├── fixtures             # Mock data files (e.g. mock JSONs)
+│ ├── page-objects         # Interface elements using page objects (POM)
 │ ├── support              # Custom support and commands
 │ └── screenshots          # Screenshots generated during tests
 ├── cypress.config.ts      # Cypress configuration

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "devDependencies": {
     "@faker-js/faker": "^9.3.0",
-    "cypress": "^13.16.1",
+    "cypress": "^13.17.0",
     "cypress-terminal-report": "^7.1.0",
     "typescript": "^5.7.2"
   },

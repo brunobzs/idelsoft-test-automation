@@ -16,6 +16,7 @@ interface LoginParams {
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
+
 Cypress.Commands.add('accessWebPage', () => {
   const baseURL: string = Cypress.config('baseUrl')
   cy.visit(baseURL);
