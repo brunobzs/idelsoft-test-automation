@@ -13,17 +13,11 @@ describe('Search Products Test', () => {
 
   it('Search for valid keyword', () => {
     const keyword: string = 't-shirt';
+    // Search by keyword
     searchPage.searchByKeyword({ keyword });
 
     // Validate the search result
-    cy.get(searchPage.relatedSearchTermsItems).each(terms => {
-      cy.wrap(terms).invoke('text').then(text => {
-        expect(text.toLowerCase()).to.contain(keyword);
-      });
-    })
-
-    // Check if the product items are listed
-    cy.get(searchPage.productItems).should('have.length.greaterThan', 0);
+    searchPage.checkSearchResults({ keyword });
   });
 
   it('Search without results', () => {
